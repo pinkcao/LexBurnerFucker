@@ -5,8 +5,8 @@
 
 ### getTextAndWrite(filename)
 descrption: get the fans sum and write it into 'fuckLex.txt'<br>
-params: String<br>
-return: null
+params: `String`<br>
+return: `null`
 ```python
 import fuckLex
 fuckLex.getTextAndWrite('fuckLex.txt')
@@ -14,8 +14,8 @@ fuckLex.getTextAndWrite('fuckLex.txt')
 
 ### get()
 descrption: get current fans count<br>
-Params: null<br>
-return: int
+Params: `null`<br>
+return: `int`
 ```python
 import fuckLex
 print(fuckLex.get())
@@ -23,8 +23,8 @@ print(fuckLex.get())
 
 ### calcDecreseSum(filename)
 descrption: get the decreseSum <br>
-Params: String<br>
-return: int
+Params: `String`<br>
+return: `int`
 
 ```python
 import fuckLex
@@ -33,8 +33,8 @@ print(fuckLex.calcDecreseSum('fuckLex.txt'))
 
 ### outPutDecreseString(filename)
 descrption: get the decrese String <br>
-Params: String<br>
-return: String
+Params: `String`<br>
+return: `String`
 ```python
 import fuckLex
 print(fuckLex.outPutDecreseString('fuckLex.txt'))
