@@ -1,6 +1,20 @@
 # fuckLexBurner
 由下水道居民制作，运行后自行设定以x秒间隔获取lexBurner粉丝数量并保存至同目录txt文件下。
 
+## use with multiple threads:
+```python
+import fuckLex,_thread
+
+try:
+    _thread.start_new_thread(fuckLex.getTextAndWrite, ('fuckLex.txt',))
+    _thread.start_new_thread(fuckLex.outPutDecreseStringInterval, ('fuckLex.txt', 60,))
+except:
+    print("Error: 无法启动线程")
+
+while 1:
+    pass
+```
+
 ## basic usage
 
 ### getTextAndWrite(filename)
@@ -42,3 +56,14 @@ print(fuckLex.outPutDecreseString('fuckLex.txt'))
 -->from  Mon Feb  8 11:42:27 2021<br>
  to  Mon Feb  8 15:08:37 2021<br>
  lexBurner fans decresed: 50925
+
+### outPutDecreseStringInterval(filename, interval):
+descrption: get the decrese String at certain interval<br>
+Params: `String, int`<br>
+return: `null`
+```python
+import fuckLex
+print(fuckLex.outPutDecreseStringInterval('fuckLex.txt', 60))
+```
+
+

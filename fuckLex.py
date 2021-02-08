@@ -1,4 +1,4 @@
-import json,requests,time
+import json,requests,time,_thread
 def get():
     return int(json.loads(requests.get("https://api.bilibili.com/x/relation/stat?vmid=777536").text)["data"]["follower"])
 
@@ -29,8 +29,6 @@ def calcDecreseSum(filename):
         last_line = lines[-1]  # 取最后一行
         print(first_line)
 
-        firstStamp = first_line.split('Time:')[1]
-        lastStamp = last_line.split('Time:')[1]
         firstFansCount = first_line.split(' ')[1].split(':')[1]
         lastFansCount = last_line.split(' ')[1].split(':')[1]
         return int(firstFansCount) - int(lastFansCount)
@@ -49,7 +47,17 @@ def outPutDecreseString(filename):
         lastFansCount = last_line.split(' ')[1].split(':')[1]
         return 'from ' + firstStamp + ' to ' + lastStamp + ' lexBurner fans decresed: ' + str(int(firstFansCount) - int(lastFansCount))
 
+def outPutDecreseStringInterval(filename, interval):
+    while True:
+        print(outPutDecreseString(filename))
+        time.sleep(interval)
+
 if __name__ == '__main__':
-    # getTextAndWrite('fuckLex.txt')
-    # print(calcDecreseSum('fuckLex.txt'))
-    print(outPutDecreseString('fuckLex.txt'))
+    try:
+        _thread.start_new_thread( getTextAndWrite, ('fuckLex.txt',) )
+        _thread.start_new_thread( outPutDecreseStringInterval, ('fuckLex.txt', 60, ) )
+    except:
+        print("Error: 无法启动线程")
+
+    while 1:
+        pass
