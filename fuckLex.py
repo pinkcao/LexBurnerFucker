@@ -52,10 +52,19 @@ def outPutDecreseStringInterval(filename, interval):
         print(outPutDecreseString(filename))
         time.sleep(interval)
 
+def outPutDecreseStringIntervalToFile(filename, interval, destfilename):
+    while True:
+        file_object = open(destfilename, 'a')
+        tempString = outPutDecreseString(filename)
+        print(tempString)
+        file_object.write(tempString + '\n')
+        file_object.close()
+        time.sleep(interval)
+
 if __name__ == '__main__':
     try:
         _thread.start_new_thread( getTextAndWrite, ('fuckLex.txt',) )
-        _thread.start_new_thread( outPutDecreseStringInterval, ('fuckLex.txt', 60, ) )
+        _thread.start_new_thread( outPutDecreseStringInterval, ('fuckLex.txt', 60, 'fuckLexOutput.txt',) )
     except:
         print("Error: 无法启动线程")
 
