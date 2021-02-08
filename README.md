@@ -3,7 +3,7 @@
 
 ## basic usage
 
-###getTextAndWrite(filename)
+### getTextAndWrite(filename)
 descrption: get the fans sum and write it into 'fuckLex.txt'<br>
 params: String<br>
 return: null
@@ -12,7 +12,7 @@ import fuckLex
 fuckLex.getTextAndWrite('fuckLex.txt')
 ```
 
-###get()
+### get()
 descrption: get current fans count<br>
 Params: null<br>
 return: int
@@ -21,7 +21,7 @@ import fuckLex
 print(fuckLex.get())
 ```
 
-###calcDecreseSum(filename)
+### calcDecreseSum(filename)
 descrption: get the decreseSum <br>
 Params: String<br>
 return: int
@@ -31,7 +31,7 @@ import fuckLex
 print(fuckLex.calcDecreseSum('fuckLex.txt'))
 ```
 
-###outPutDecreseString(filename)
+### outPutDecreseString(filename)
 descrption: get the decrese String <br>
 Params: String<br>
 return: String
