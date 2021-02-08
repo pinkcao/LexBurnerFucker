@@ -64,7 +64,7 @@ def outPutDecreseStringIntervalToFile(filename, interval, destfilename):
 if __name__ == '__main__':
     try:
         _thread.start_new_thread( getTextAndWrite, ('fuckLex.txt',) )
-        _thread.start_new_thread( outPutDecreseStringInterval, ('fuckLex.txt', 60, 'fuckLexOutput.txt',) )
+        _thread.start_new_thread( outPutDecreseStringIntervalToFile, ('fuckLex.txt', 60, 'fuckLexOutput.txt',) )
     except:
         print("Error: 无法启动线程")
 

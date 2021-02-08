@@ -4,3 +4,12 @@ from  Mon Feb  8 11:42:27 2021
 from  Mon Feb  8 11:42:27 2021
  to  Mon Feb  8 16:55:08 2021
  lexBurner fans decresed: 72382
+from  Mon Feb  8 11:42:27 2021
+ to  Mon Feb  8 16:55:08 2021
+ lexBurner fans decresed: 72382
+from  Mon Feb  8 11:42:27 2021
+ to  Mon Feb  8 23:06:46 2021
+ lexBurner fans decresed: 155214
+from  Mon Feb  8 11:42:27 2021
+ to  Mon Feb  8 23:07:49 2021
+ lexBurner fans decresed: 155795

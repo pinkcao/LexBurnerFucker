@@ -1376,3 +1376,14 @@ lexBurner fans:8469498 decreaseNum: 28 Time: Mon Feb  8 16:54:36 2021
 lexBurner fans:8469473 decreaseNum: 25 Time: Mon Feb  8 16:54:47 2021
 lexBurner fans:8469433 decreaseNum: 40 Time: Mon Feb  8 16:54:57 2021
 lexBurner fans:8469414 decreaseNum: 19 Time: Mon Feb  8 16:55:08 2021
+lexBurner fans:8386958 decreaseNum: 69 Time: Mon Feb  8 23:06:04 2021
+lexBurner fans:8386828 decreaseNum: 130 Time: Mon Feb  8 23:06:14 2021
+lexBurner fans:8386783 decreaseNum: 45 Time: Mon Feb  8 23:06:25 2021
+lexBurner fans:8386678 decreaseNum: 105 Time: Mon Feb  8 23:06:35 2021
+lexBurner fans:8386582 decreaseNum: 96 Time: Mon Feb  8 23:06:46 2021
+lexBurner fans:8386472 decreaseNum: 110 Time: Mon Feb  8 23:06:57 2021
+lexBurner fans:8386376 decreaseNum: 96 Time: Mon Feb  8 23:07:08 2021
+lexBurner fans:8386286 decreaseNum: 90 Time: Mon Feb  8 23:07:18 2021
+lexBurner fans:8386229 decreaseNum: 57 Time: Mon Feb  8 23:07:29 2021
+lexBurner fans:8386114 decreaseNum: 115 Time: Mon Feb  8 23:07:39 2021
+lexBurner fans:8386001 decreaseNum: 113 Time: Mon Feb  8 23:07:49 2021
